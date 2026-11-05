@@ -20,7 +20,7 @@ const config = {
   // Hosted LLM (free tiers): "gemini", "groq" or "none".
   llmProvider: (env.LLM_PROVIDER || (env.GEMINI_API_KEY ? 'gemini' : env.GROQ_API_KEY ? 'groq' : 'none')).toLowerCase(),
   geminiKey: env.GEMINI_API_KEY || '',
-  geminiModel: env.GEMINI_MODEL || 'gemini-2.5-flash',
+  geminiModel: env.GEMINI_MODEL || 'gemini-3.5-flash-lite',
   groqKey: env.GROQ_API_KEY || '',
   groqModel: env.GROQ_MODEL || 'llama-3.3-70b-versatile',
   // Test hook: point the provider at a mock server.
